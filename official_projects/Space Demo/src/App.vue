@@ -1,9 +1,11 @@
 <script>
 import navbar from './components/navbar.vue';
 import Griditem from './components/Griditem.vue'
+import SearchBar from './components/SearchBar.vue'
+import {sendMessage} from './modules/websocketFunctions.js'
 
 export default {
-  components: { navbar,Griditem }, 
+  components: { navbar,Griditem, SearchBar }, 
   data() {
     return {
       result: "eeee",
@@ -12,6 +14,9 @@ export default {
     }
   },
   methods: {
+    sendMessage($event){
+      return sendMessage($event)
+    },
     add() {
       this.count++
     },
@@ -42,14 +47,12 @@ export default {
   <body>
     <navbar />
     <div class="header">
-      <div class="Search">
-        <input class="SearchInput"/> <button class="SearchButton">Search</button>
-      </div>
+      <SearchBar v-on:search-event="sendMessage($event)"/>
     </div>
     <div class="Grid">
-      <Griditem class="item1" msg="I am item 1" content="./assets/Apod test.jpg"/>
-      <Griditem class="item1" msg="I am item 1" content="./assets/Apod test.jpg"/>
-      <Griditem class="item1" msg="I am item 1" content="./assets/Apod test.jpg"/>
+      <Griditem class="item1" msg="I am item 1" content="./src/assets/apod_test.jpg"/>
+      <Griditem class="item1" msg="I am item 1" content="./src/assets/apod_test.jpg"/>
+      <Griditem class="item1" msg="I am item 1" content="./src/assets/apod_test.jpg"/>
     </div>
   </body>
 
