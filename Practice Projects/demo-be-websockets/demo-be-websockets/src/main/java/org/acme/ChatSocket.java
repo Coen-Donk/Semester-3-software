@@ -2,6 +2,9 @@ package org.acme;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import org.acme.SocketHandler;
+
+import java.io.IOException;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.websocket.OnClose;
@@ -16,6 +19,7 @@ import javax.websocket.Session;
 public class ChatSocket {
 
     Map<String, Session> sessions = new ConcurrentHashMap<>(); 
+    SocketHandler socketHandler = new SocketHandler();
 
     @OnOpen
     public void onOpen(Session session) {
@@ -33,19 +37,10 @@ public class ChatSocket {
     }
 
     @OnMessage
-    public void onMessage(String message) {
-        System.out.println(message);
-        broadcast(message + " exists in my nameList!");
-        broadcast("this is a demo");
+    public void onMessage(Session session, String message) throws IOException {
+        System.out.println("Session ID: " + session.getId() + " message: " + message);
+        String asteroidData = socketHandler.getAsteroidData(message);
+        socketHandler.sendMessageToClient(session, asteroidData);
     }
 
-    private void broadcast(String message) {
-        sessions.values().forEach(s -> {
-            s.getAsyncRemote().sendObject(message, result ->  {
-                if (result.getException() != null) {
-                    System.out.println("Unable to send message: " + result.getException());
-                }
-            });
-        });
-    }
 }

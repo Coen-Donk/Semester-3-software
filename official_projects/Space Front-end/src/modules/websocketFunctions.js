@@ -5,7 +5,7 @@ socket.onopen = function(e) {
 };
 
 socket.onmessage = function(event) {
-    var magnitude = parse(event.data).obs_mag
+    var magnitude = parse(event.data).obs_mag //hier parse ik voor selectief de magnitude
   console.log(`DATA RECEIVED:  ${magnitude}`);
 };
 

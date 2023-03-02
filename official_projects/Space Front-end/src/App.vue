@@ -53,6 +53,10 @@ export default {
       <Griditem class="item1" msg="I am item 1" content="./src/assets/apod_test.jpg"/>
       <Griditem class="item1" msg="I am item 1" content="./src/assets/apod_test.jpg"/>
       <Griditem class="item1" msg="I am item 1" content="./src/assets/apod_test.jpg"/>
+      <Griditem class="item1" msg="I am item 1" content="./src/assets/apod_test.jpg"/>
+      <Griditem class="item1" msg="I am item 2" content="./src/assets/apod_test.jpg"/>
+      <Griditem class="item1" msg="I am item 2" content="./src/assets/apod_test.jpg"/>
+      <Griditem class="item1" msg="I am item 2" content="./src/assets/apod_test.jpg"/>
     </div>
   </body>
 
@@ -61,21 +65,18 @@ export default {
 
 <style>
 .Grid {
-  border-width: thin;
-  border-style: solid;
-  border-color: red;
-
-  position: relative;
   display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 10px;
-  text-align: center;
-  padding: 10px;
-  margin: auto;
-  width: 80%;
-  height: 35%;
-  top: 50px;
-  font-family: "Lucida Console", "Courier New", monospace;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 20px;
+  border: 2px solid red;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  margin-top: 50px; /* Add some space between the navbar and the grid */
+  max-width: 85%; /* Add some space on the left and right sides of the grid */
+  margin-left: auto;
+  margin-right: auto; /* Center the grid horizontally */
 }
 
 .header {
@@ -143,10 +144,6 @@ export default {
   }
 }
 
-.item1 {
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
 
 .container {
   padding: 20px;
