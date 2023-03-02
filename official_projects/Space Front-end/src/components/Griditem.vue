@@ -1,7 +1,10 @@
 <script>
 export default {
     props: {
-        msg: String,
+        msg: {
+          type: String, 
+          default: 'Error on passing data, check console.'
+        },
         content:String,
         info:String
     }
@@ -11,7 +14,7 @@ export default {
 <template>
     <div class="gridcontent">
         <img class="image" v-bind:src="content">
-        <h5 class="text">{{ msg || 'Error on passing data, check console.' }}</h5>
+        <h5 class="text">{{ msg }}</h5>
     </div>
 </template>
 

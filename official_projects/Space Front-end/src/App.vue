@@ -11,14 +11,12 @@ export default {
       result: "eeee",
       count: 0,
       apiKey: '',
+      gridItems: []
     }
   },
   methods: {
     sendMessage($event){
       return sendMessage($event)
-    },
-    add() {
-      this.count++
     },
     async fetchAPIData() {
       this.responseAvailable = false;
@@ -36,6 +34,10 @@ export default {
       }).catch(err => {
         console.log(err)
       })
+    },
+    addItem(newItem) {
+      this.gridItems = [...this.gridItems, newItem]
+      console.log(this.gridItems[this.gridItems.length - 1].msg);
     }
   }
 }
@@ -47,16 +49,13 @@ export default {
   <body>
     <navbar />
     <div class="header">
-      <SearchBar v-on:search-event="sendMessage($event)"/>
+      <SearchBar v-on:search-event="sendMessage($event)" @new-item-added="addItem"/>
     </div>
     <div class="Grid">
       <Griditem class="item1" msg="I am item 1" content="./src/assets/apod_test.jpg"/>
-      <Griditem class="item1" msg="I am item 1" content="./src/assets/apod_test.jpg"/>
-      <Griditem class="item1" msg="I am item 1" content="./src/assets/apod_test.jpg"/>
-      <Griditem class="item1" msg="I am item 1" content="./src/assets/apod_test.jpg"/>
-      <Griditem class="item1" msg="I am item 2" content="./src/assets/apod_test.jpg"/>
-      <Griditem class="item1" msg="I am item 2" content="./src/assets/apod_test.jpg"/>
-      <Griditem class="item1" msg="I am item 2" content="./src/assets/apod_test.jpg"/>
+    <div v-for="(item, index) in gridItems" :key="index" :class="'item' + (index + 2)">
+      <Griditem class="item2" :msg="item.msg" :content="item.content"/>
+    </div>
     </div>
   </body>
 
@@ -73,10 +72,10 @@ export default {
   justify-content: center;
   align-items: center;
   overflow: auto;
-  margin-top: 50px; /* Add some space between the navbar and the grid */
-  max-width: 85%; /* Add some space on the left and right sides of the grid */
+  margin-top: 50px;
+  max-width: 85%; 
   margin-left: auto;
-  margin-right: auto; /* Center the grid horizontally */
+  margin-right: auto; 
 }
 
 .header {

@@ -1,19 +1,33 @@
 <script>
 import useEventsBus from "../modules/eventbus.js"
+import GridItem from './Griditem.vue'
 import {watch} from "vue"
 
 export default{
     data(){
+        components:{
+            GridItem
+        }
         return{
-            searchBarInput: ""
+            searchBarInput: "",
+            gridItems: []
         }
     },
     methods: {
-
+        addItem(input) {
+            console.log(input)
+      const newItem = {
+        msg: input,
+        content: "./src/assets/apod_test.jpg"
+      };
+      console.log("inputted");
+      this.$emit("new-item-added", newItem);
+      console.log("emitted")
+    }
     },
     mounted(){
         const {bus} = useEventsBus();
-    }
+    },
 }
 </script>
 
@@ -21,12 +35,15 @@ export default{
     <div class="Search">
         <input class="SearchInput" v-model="searchBarInput" type="text" placeholder="asteroid name"/> 
         <button class="SearchButton" v-on:click="$emit('search-event', searchBarInput)">Search</button>
+        <button class="SearchButton" @click="addItem(searchBarInput)">Add Item</button>
     </div>
 </template>
 
 <style>
     .Search{
-    float: right;
+    overflow: hidden;
+    z-index: 1000;
+    position: fixed;
     }
 
     .SearchButton {
@@ -52,6 +69,7 @@ export default{
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer;
+    bottom: 1000px;
     }
 
     .SearchButton:active,
@@ -70,5 +88,9 @@ export default{
 
     .SearchButton:hover span {
     background: none;
+    }
+
+    .SearchInput{
+        margin-right:10px;
     }
 </style>
