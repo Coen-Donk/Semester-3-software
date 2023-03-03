@@ -15,7 +15,6 @@ export default{
     },
     methods: {
         addItem(input) {
-            console.log(input)
       const newItem = {
         msg: input,
         content: "./src/assets/apod_test.jpg"

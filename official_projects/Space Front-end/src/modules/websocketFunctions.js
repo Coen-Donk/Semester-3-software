@@ -5,8 +5,9 @@ socket.onopen = function(e) {
 };
 
 socket.onmessage = function(event) {
-    var magnitude = parse(event.data).obs_mag //hier parse ik voor selectief de magnitude
-  console.log(`DATA RECEIVED:  ${magnitude}`);
+    var asteroiddata = parse(event.data) //.obs_mag //hier parse ik voor selectief de magnitude
+  console.log(`DATA RECEIVED:  ${asteroiddata}`);
+  this.$emit(asteroiddata)
 };
 
 socket.onclose = function(event) {
