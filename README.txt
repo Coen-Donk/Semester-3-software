@@ -20,3 +20,6 @@ CD has been implemented as well, as any push to the github immediately pushes my
 7. You analyze and describe simple business processes that are related to your project.
 
 8.  You act in a professional manner during software development and learning.
+
+A research report is also visible here: 
+https://github.com/Coen-Donk/Semester-3-software/wiki/Research-Report-Web-sockets-compared-to-API's
