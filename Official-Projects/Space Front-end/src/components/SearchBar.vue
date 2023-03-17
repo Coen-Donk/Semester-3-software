@@ -1,5 +1,5 @@
 <script>
-import useEventsBus from "../modules/eventbus.js"
+import useEventBus from "../modules/eventbus.js"
 import GridItem from './Griditem.vue'
 import {watch} from "vue"
 
@@ -10,31 +10,39 @@ export default{
         }
         return{
             searchBarInput: "",
-            gridItems: []
+            gridItems: [],
+            itemname: ""
         }
     },
     methods: {
         addItem(input) {
       const newItem = {
         msg: input,
-        content: "./src/assets/apod_test.jpg"
+        content: "assets/apod_test.jpg"
       };
-      console.log("inputted");
       this.$emit("new-item-added", newItem);
-      console.log("emitted")
     }
     },
-    mounted(){
-        const {bus} = useEventsBus();
-    },
-}
+   mounted() {
+    const {bus} = useEventBus();
+       watch(()=>bus.value.get('data-received'), (val) => {
+      const [dataReceivedBus] = val ?? []
+
+      console.log(dataReceivedBus + "hi?")
+
+      var input = "asteroid " + JSON.parse(dataReceivedBus).fullname + " Has a magnitude of " + JSON.parse(dataReceivedBus).obs_mag + " and was discovered on " + JSON.parse(dataReceivedBus).des
+        console.log(input + "input")
+      this.addItem(input)
+       })
+  }
+}   
 </script>
 
 <template>
     <div class="Search">
         <input class="SearchInput" v-model="searchBarInput" type="text" placeholder="asteroid name"/> 
         <button class="SearchButton" v-on:click="$emit('search-event', searchBarInput)">Search</button>
-        <button class="SearchButton" @click="addItem(searchBarInput)">Add Item</button>
+        <button class="SearchButton" v-on:click="$emit('search-event', searchBarInput)">Add Item</button>
     </div>
 </template>
 

@@ -1,3 +1,6 @@
+
+import useEventBus from "./eventbus";
+
 let socket = new WebSocket("ws://localhost:8080/demo/");
 
 socket.onopen = function(e) {
@@ -5,9 +8,10 @@ socket.onopen = function(e) {
 };
 
 socket.onmessage = function(event) {
-    var asteroiddata = parse(event.data) //.obs_mag //hier parse ik voor selectief de magnitude
+    var asteroiddata = event.data //hier parse ik voor selectief de magnitude
   console.log(`DATA RECEIVED:  ${asteroiddata}`);
-  this.$emit(asteroiddata)
+  const {emit} = useEventBus()
+ emit('data-received', asteroiddata)
 };
 
 socket.onclose = function(event) {

@@ -8,13 +8,13 @@ export default {
   components: { navbar,Griditem, SearchBar }, 
   data() {
     return {
-      result: "eeee",
+      result: "ee",
       count: 0,
       apiKey: '',
       gridItems: []
     }
   },
-  methods: {
+  methods: {  
     sendMessage($event){
       return sendMessage($event)
     },
@@ -49,10 +49,10 @@ export default {
   <body>
     <navbar />
     <div class="header">
-      <SearchBar v-on:search-event="sendMessage($event)" @new-item-added="addItem"/>
+      <SearchBar v-on:search-event="sendMessage($event)" v-on:new-item-added="addItem" v-on:search-event-add="sendMessage($event)"/>
     </div>
     <div class="Grid">
-      <Griditem class="item1" msg="I am item 1" content="./src/assets/apod_test.jpg"/>
+      <Griditem class="item1" msg="I am item 1" content="assets/apod_test.jpg"/>
     <div v-for="(item, index) in gridItems" :key="index" :class="'item' + (index + 2)">
       <Griditem class="item2" :msg="item.msg" :content="item.content"/>
     </div>
@@ -67,7 +67,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(100px, auto);
-  grid-gap: 20px;
+  grid-gap: 0px;
   border: 2px solid red;
   justify-content: center;
   align-items: center;
