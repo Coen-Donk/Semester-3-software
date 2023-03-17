@@ -5,13 +5,18 @@ Learning outcomes and what I've done for them, up until now. For a more detailed
 https://vue-space-lb8g42a1u-coendonk.vercel.app/
 For now I've designed a very basic full stack web application. The web socket is yet to be connected online, but it does work offline and the code is visible here on github. 
 (I am considering of keeping it like this for now as the online Web App will still function if you host the Web Socket locally)
-ORM Has been shown in a prototype project here: [LINK PENDING]
-My explanation as for why can be seen here: [LINK PENDING]
+ORM Has been shown in a prototype project here: [https://github.com/Coen-Donk/Semester-3-software/tree/Development/Practice%20Projects/ORM/ORM%20Console]
+My explanation as for why can be seen here: [https://github.com/Coen-Donk/Semester-3-software/wiki/Portfolio-individual-project#orm]
 
 2. You use software tooling and methodology that continuously monitors and improve the software quality during software development.
 
 3. You choose and implement the most suitable agile software development method for your software project.
 A report over my knowledges of agile working can be seen here:
+
+I have already made a report on my research findings about Agile methodology frameworks, and I have designed user stories which you can see in my projects tab (These are not perfectly up-to-date as I'm prioritizing different aspects of what I want to learn instead of completing the project). 
+
+You can find my findings here: https://github.com/Coen-Donk/Semester-3-software/wiki/Agile-Report
+Explanation and argumentation about which methodology we've chosen in the group project and which one I chose in my IP can be seen here: https://github.com/Coen-Donk/Semester-3-software/wiki/Agile-Report#agile-framework-choice
 
 4. You design and implement a (semi)automated software release process that matches the needs of the project context.
 CI has been created for the website which you can view here: https://github.com/Coen-Donk/Vue-Space-App/settings/code_review_limits
@@ -32,5 +37,10 @@ client, instead of making our op priority.
 
 With the IP I frequently ask feedback on different aspects of my project and incorperate my feedback, or explain why I've gone a different route. The feedback I've received can be seen on feedpulse
 
-A research report is also visible here: 
+This semester I also have to write Research reports (In specific two, one about security and one free of choice). A list of my Research reports will be written here
+
+Web Sockets Compared to API's (Lacks experimentation and Connection to IP)
 https://github.com/Coen-Donk/Semester-3-software/wiki/Research-Report-Web-sockets-compared-to-API's
+
+Agile Report 
+https://github.com/Coen-Donk/Semester-3-software/wiki/Agile-Report
