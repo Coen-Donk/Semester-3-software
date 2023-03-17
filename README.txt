@@ -27,7 +27,7 @@ CD has been implemented as well, as any push to the github immediately pushes my
 6. You analyze (non-functional) requirements, elaborate (architectural) designs and validate them using multiple types of test techniques.
 I have designed an architectural design (the C4-model level 1 and 2) for my application. I have stuck with Level 1 and 2 for now as they best display the overall structure of the app and level 3 might still change frequently as my
 knowledge of Vue.js and the Java Web-socket changes. 
-The documentation can be seen here: [LINK PENDING}
+The documentation can be seen here: [https://github.com/Coen-Donk/Semester-3-software/tree/Development/Documentation}
 
 7. You analyze and describe simple business processes that are related to your project.
 
