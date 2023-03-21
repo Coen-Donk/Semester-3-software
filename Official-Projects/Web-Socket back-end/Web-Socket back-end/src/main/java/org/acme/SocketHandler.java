@@ -1,6 +1,11 @@
 package org.acme;
 
 import org.acme.APICaller;
+import org.acme.messages.AsteroidRequestMessage;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.websocket.server.ServerEndpoint;
 import javax.websocket.Session;
@@ -8,6 +13,10 @@ import javax.websocket.Session;
 import java.io.IOException;
 
 public class SocketHandler{
+
+    private String apiUrl = "https://ssd-api.jpl.nasa.gov/nhats.api?des=";
+
+    ObjectMapper objectMapper = new ObjectMapper();
 
     public SocketHandler(){
         
@@ -27,8 +36,14 @@ public class SocketHandler{
     //     return "";
     // }
 
+    private AsteroidRequestMessage mapMessageToObject(String data) throws JsonMappingException, JsonProcessingException{
+        return objectMapper.readValue(data, AsteroidRequestMessage.class);
+    }
+
     public String getAsteroidData(String data) throws IOException{
-        APICaller apiCaller = new APICaller("https://ssd-api.jpl.nasa.gov/nhats.api?des=" + data.toUpperCase());
+        AsteroidRequestMessage asm = mapMessageToObject(data);
+        System.out.println(asm.getData().toUpperCase());
+        APICaller apiCaller = new APICaller(apiUrl + asm.getData().toUpperCase());
         return apiCaller.doGetRequest();
     }
 }
