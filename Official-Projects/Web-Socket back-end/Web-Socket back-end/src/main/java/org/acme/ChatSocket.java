@@ -40,6 +40,7 @@ public class ChatSocket {
     public void onMessage(Session session, String message) throws IOException {
         System.out.println("Session ID: " + session.getId() + " message: " + message);
         String asteroidData = socketHandler.getAsteroidData(message);
+        System.out.println(asteroidData);
         socketHandler.sendMessageToClient(session, asteroidData);
     }
 

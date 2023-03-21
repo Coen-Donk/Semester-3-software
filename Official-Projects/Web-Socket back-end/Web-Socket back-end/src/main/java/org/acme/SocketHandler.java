@@ -1,6 +1,8 @@
 package org.acme;
 
+import com.fasterxml.jackson.core.JsonPointer;
 import org.acme.APICaller;
+import org.acme.messages.AsteroidDataMessage;
 import org.acme.messages.AsteroidRequestMessage;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -40,10 +42,16 @@ public class SocketHandler{
         return objectMapper.readValue(data, AsteroidRequestMessage.class);
     }
 
+    private AsteroidDataMessage mapNasaDataToAsteroidObject(String asteroidData) throws JsonMappingException, JsonProcessingException {
+        System.out.println(asteroidData);
+        return objectMapper.readValue(asteroidData, AsteroidDataMessage.class);
+    }
+
     public String getAsteroidData(String data) throws IOException{
         AsteroidRequestMessage asm = mapMessageToObject(data);
-        System.out.println(asm.getData().toUpperCase());
         APICaller apiCaller = new APICaller(apiUrl + asm.getData().toUpperCase());
-        return apiCaller.doGetRequest();
+        String asteroidDataString =  apiCaller.doGetRequest();
+        System.out.println(asteroidDataString);
+        return mapNasaDataToAsteroidObject(asteroidDataString).getFullname();
     }
 }
