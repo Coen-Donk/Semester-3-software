@@ -12,6 +12,8 @@ namespace ORM_Console
 		public DbSet<Order> Orders { get; set; }
 		public DbSet<OrderItem> Items { get; set; }
 		public DbSet<Products> Product { get; set; }
+		public DbSet<Users> Users { get; set; }
+
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{

@@ -28,7 +28,7 @@ namespace ORM_Console.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("accounts");
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("ORM_Console.OrderItem", b =>
@@ -52,10 +52,10 @@ namespace ORM_Console.Migrations
 
                     b.HasIndex("Productid");
 
-                    b.ToTable("OrderItem");
+                    b.ToTable("Items");
                 });
 
-            modelBuilder.Entity("ORM_Console.Product", b =>
+            modelBuilder.Entity("ORM_Console.Products", b =>
                 {
                     b.Property<int>("Productid")
                         .ValueGeneratedOnAdd()
@@ -73,13 +73,32 @@ namespace ORM_Console.Migrations
                     b.ToTable("Product");
                 });
 
+            modelBuilder.Entity("ORM_Console.Users", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Lastname")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("Users");
+                });
+
             modelBuilder.Entity("ORM_Console.OrderItem", b =>
                 {
                     b.HasOne("ORM_Console.Order", null)
                         .WithMany("Items")
                         .HasForeignKey("OrderId");
 
-                    b.HasOne("ORM_Console.Product", "Product")
+                    b.HasOne("ORM_Console.Products", "Product")
                         .WithMany()
                         .HasForeignKey("Productid")
                         .OnDelete(DeleteBehavior.Cascade)
