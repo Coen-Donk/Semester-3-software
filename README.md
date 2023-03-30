@@ -1,6 +1,6 @@
 Learning outcomes and what I've done for them, up until now. For a more detailed explanation of my progress please see: https://github.com/Coen-Donk/Semester-3-software/wiki/Portfolio-individual-project
 
-1. You design and build user-friendly, full-stack web applications.
+# 1. You design and build user-friendly, full-stack web applications.
 
 https://vue-space-lb8g42a1u-coendonk.vercel.app/
 
