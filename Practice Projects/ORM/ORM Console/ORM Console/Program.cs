@@ -9,9 +9,9 @@ using (var db = new DatabaseContext())
 	db.Users.Add(user);
 	db.SaveChanges();
 
-	foreach (var p in db.Users)
+	foreach (var p in db.Orders)
 	{
-		Console.WriteLine("{0} {1} {2}", p.UserId, p.FirstName, p.Lastname);
+		Console.WriteLine("{0} {1} {2}", p.Id , p.Created , p.Items);
 	}
 
 }

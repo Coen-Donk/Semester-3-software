@@ -17,7 +17,7 @@ namespace ORM_Console
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlite("Data Source=F:\\2022-2023\\Semester 3 Software\\Semester-3-software\\Practice Projects\\ORM\\ORM Console\\ORM Console\\database.db");
+			optionsBuilder.UseSqlite("Data Source=D:\\2022-2023\\Semester 3 Software\\Semester-3-software\\Practice Projects\\ORM\\ORM Console\\ORM Console\\database.db");
 		}
 	}
 }

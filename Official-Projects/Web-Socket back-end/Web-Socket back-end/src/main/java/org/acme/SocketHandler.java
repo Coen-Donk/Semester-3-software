@@ -35,7 +35,7 @@ public class SocketHandler{
         });
     }
 
-    private AsteroidRequestMessage mapMessageToObject(String data) throws JsonMappingException, JsonProcessingException{
+    private AsteroidRequestMessage mapRequestMessageToObject(String data) throws JsonMappingException, JsonProcessingException{
         return objectMapper.readValue(data, AsteroidRequestMessage.class);
     }
 
@@ -48,7 +48,7 @@ public class SocketHandler{
     }
 
     public String getAsteroidData(String data) throws IOException{
-        AsteroidRequestMessage asm = mapMessageToObject(data);
+        AsteroidRequestMessage asm = mapRequestMessageToObject(data);
         APICaller apiCaller = new APICaller(apiUrl + asm.getData().toUpperCase());
         String asteroidDataString =  apiCaller.doGetRequest();
         AsteroidDataMessage adm = mapNasaDataToAsteroidObject(asteroidDataString);

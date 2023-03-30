@@ -2,7 +2,6 @@ package org.acme;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import org.acme.SocketHandler;
 
 import java.io.IOException;
 
@@ -16,10 +15,10 @@ import javax.websocket.Session;
 
 @ServerEndpoint("/demo/")         
 @ApplicationScoped
-public class ChatSocket {
+public class WebSocket {
 
-    Map<String, Session> sessions = new ConcurrentHashMap<>(); 
-    SocketHandler socketHandler = new SocketHandler();
+    public Map<String, Session> sessions = new ConcurrentHashMap<>();
+    public SocketHandler socketHandler = new SocketHandler();
 
     @OnOpen
     public void onOpen(Session session) {
@@ -40,7 +39,6 @@ public class ChatSocket {
     public void onMessage(Session session, String message) throws IOException {
         System.out.println("Session ID: " + session.getId() + " message: " + message);
         String asteroidData = socketHandler.getAsteroidData(message);
-        System.out.println(asteroidData);
         socketHandler.sendMessageToClient(session, asteroidData);
     }
 
