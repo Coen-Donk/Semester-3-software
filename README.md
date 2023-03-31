@@ -14,6 +14,8 @@ My explanation as for why can be seen here: [https://github.com/Coen-Donk/Semest
 
 ### 2. You use software tooling and methodology that continuously monitors and improve the software quality during software development.
 
+For this learning outcome I've designed Unit testing inside my Web Socket application to ensure that the methods are all working correctly, as well as the connections. To ensure I've tested everything I gave myself the requirement to have a minimum of 90% Test coverage. 
+
 ### 3. You choose and implement the most suitable agile software development method for your software project.
 
 A report over my knowledges of agile working can be seen here:
@@ -22,6 +24,8 @@ I have already made a report on my research findings about Agile methodology fra
 
 You can find my findings here: https://github.com/Coen-Donk/Semester-3-software/wiki/Agile-Report
 Explanation and argumentation about which methodology we've chosen in the group project and which one I chose in my IP can be seen here: https://github.com/Coen-Donk/Semester-3-software/wiki/Agile-Report#agile-framework-choice
+
+Link to Trello with User stories, enablers, epics etc.: https://trello.com/invite/b/4bBnZg2C/ATTIc4af5a64087bfbf2f8c158d8151621a7BE7BC3C4/sem-3-vue-space-app
 
 ### 4. You design and implement a (semi)automated software release process that matches the needs of the project context.
 
