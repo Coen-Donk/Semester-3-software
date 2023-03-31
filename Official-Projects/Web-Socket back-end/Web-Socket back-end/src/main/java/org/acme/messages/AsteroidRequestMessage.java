@@ -4,10 +4,6 @@ public class AsteroidRequestMessage {
     
     private String data;
 
-    public AsteroidRequestMessage(){
-
-    }
-
     public String getData(){
         return this.data;
     }
