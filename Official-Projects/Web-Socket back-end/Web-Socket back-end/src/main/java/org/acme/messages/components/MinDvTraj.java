@@ -3,10 +3,6 @@ package org.acme.messages.components;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class MinDvTraj {
-/*
-    "min_dv_traj":{"vrel_arr_earth":"0.023"}
-    */
-
     @JsonProperty(value = "c3")
     private String c3;
     @JsonProperty(value = "v_dep_earth")

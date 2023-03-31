@@ -36,7 +36,7 @@ public class AsteroidDataMessage {
     private String h;
 
     public AsteroidDataMessage(){
-        
+        //Is empty as it's rquired to properly build the class
     }
 
     public String getObs_mag() {

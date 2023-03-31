@@ -1,21 +1,16 @@
 package org.acme;
 
-import com.fasterxml.jackson.core.JsonPointer;
-import com.fasterxml.jackson.databind.JsonNode;
-import org.acme.APICaller;
+
 import org.acme.messages.AsteroidDataMessage;
 import org.acme.messages.AsteroidRequestMessage;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import javax.websocket.server.ServerEndpoint;
 import javax.websocket.Session;
 
 import java.io.IOException;
-import java.util.Iterator;
-import java.util.Map;
 
 public class SocketHandler{
 
@@ -24,7 +19,7 @@ public class SocketHandler{
     ObjectMapper objectMapper = new ObjectMapper();
 
     public SocketHandler(){
-        
+       //Empty as it's required to build the class
     }
     
     public void sendMessageToClient(Session session, String message) {
@@ -35,7 +30,7 @@ public class SocketHandler{
         });
     }
 
-    private AsteroidRequestMessage mapRequestMessageToObject(String data) throws JsonMappingException, JsonProcessingException{
+    private AsteroidRequestMessage mapRequestMessageToObject(String data)throws JsonProcessingException{
         return objectMapper.readValue(data, AsteroidRequestMessage.class);
     }
 

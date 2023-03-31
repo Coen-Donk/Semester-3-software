@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
-public class APICallerTest {
+class APICallerTest {
 
     @Test
-    public void testValidGetRequestOutput() throws IOException {
+    void testValidGetRequestOutput() throws IOException {
         String validResourceUrl = "https://ssd-api.jpl.nasa.gov/nhats.api?des=2021 JG6";
         APICaller api = new APICaller(validResourceUrl);
         String actualData = api.doGetRequest();
@@ -21,7 +21,7 @@ public class APICallerTest {
     }
 
     @Test
-    public void testInvalidObjectGetRequestOutput() throws IOException {
+    void testInvalidObjectGetRequestOutput() throws IOException {
         String invalidResourceUrl = "https://ssd-api.jpl.nasa.gov/nhats.api?des=0221 JG6";
         APICaller api = new APICaller(invalidResourceUrl);
         String errorMessage = "object not found";
@@ -31,7 +31,7 @@ public class APICallerTest {
     }
 
     @Test
-    public void testInvalidGetRequestOutput() throws IOException {
+    void testInvalidGetRequestOutput() throws IOException {
         String invalidResourceUrl = "https://ssd-api.jpl.nasa.gov/nhats.api?es=0221 JG6";
         APICaller api = new APICaller(invalidResourceUrl);
         String errorMessage = "error";

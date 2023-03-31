@@ -1,10 +1,10 @@
 import org.acme.SocketHandler;
-import org.acme.WebSocket;
+
 import org.acme.messages.AsteroidDataMessage;
-import org.acme.messages.AsteroidRequestMessage;
+
 import org.acme.messages.components.*;
 import org.assertj.core.api.Assertions;
-import org.junit.Assert;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -18,12 +18,12 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 
 
-public class SocketHandlerTest {
+class SocketHandlerTest {
     static AsteroidDataMessage adm;
     SocketHandler socketHandler = new SocketHandler();
 
     @BeforeAll
-    public static void createAdmAndAsm(){
+    static void createAdmAndAsm(){
         AsteroidDataMessage _adm = new AsteroidDataMessage();
 
         MinDv _minDv = new MinDv();
@@ -102,26 +102,15 @@ public class SocketHandlerTest {
     }
 
     @Test
-    public void testReceiveAsteroidDataJson() throws IOException {
+    void testReceiveAsteroidDataJson() throws IOException {
         Assertions.assertThat(socketHandler.getAsteroidData("{\"data\":\"2021 JG6\"}"))
                 .contains("\"obs_mag\":\"23.98\"")
                 .contains("\"min_dv\":")
                 .contains("\"fullname\":\"       (2021 JG6)\"")
                 .contains("\"n_via_traj\":1082523");
     }
-
-/*    @Test
-    public void testMapRequestMessageToObject(){
-        AsteroidRequestMessage expectedArm = new AsteroidRequestMessage();
-        String data = "2021 JG6";
-        String inputData = "{\"data\":\"2021 JG6\"}";
-        expectedArm.setData(data);
-
-        Assert.assertEquals(expectedArm, socketHandler.);
-    }*/
-
     @Test
-    public void testSendOnMessage(){
+    void testSendOnMessage(){
         Session session = Mockito.mock(Session.class);
         RemoteEndpoint.Async asyncRemote = Mockito.mock(RemoteEndpoint.Async.class);
         Mockito.when(session.getAsyncRemote()).thenReturn(asyncRemote);
