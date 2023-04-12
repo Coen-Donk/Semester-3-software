@@ -31,6 +31,9 @@ Explanation and argumentation about which methodology we've chosen in the group 
 
 Link to Trello with User stories, enablers, epics etc.: https://trello.com/invite/b/4bBnZg2C/ATTIc4af5a64087bfbf2f8c158d8151621a7BE7BC3C4/sem-3-vue-space-app
 
+link to screenshots of the devops for my group project: https://github.com/Coen-Donk/Semester-3-software/wiki/Agile-Report#agile-framework-choice
+link to screenshot of our burn down-chart for the group project: https://github.com/Coen-Donk/Semester-3-software/wiki/Portfolio-Group-Project#sprint-2
+ 
 ### 4. You design and implement a (semi)automated software release process that matches the needs of the project context.
 
 CI has been created for the website which you can view here: https://github.com/Coen-Donk/Vue-Space-App/settings/code_review_limits
