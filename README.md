@@ -52,6 +52,8 @@ The documentation can be seen here: [https://github.com/Coen-Donk/Semester-3-sof
 
 ### 7. You analyze and describe simple business processes that are related to your project.
 
+A busness process report can be viewed here: https://github.com/Coen-Donk/Semester-3-software/wiki/Business-Process-Ping-pong
+
 ### 8.  You act in a professional manner during software development and learning.
 
 I feel that up until now I have always stuck with a professional manner in both the GP and IP. With the GP I take into the account the feedback of the stakeholders together with my group mates and we keep the priority of the
