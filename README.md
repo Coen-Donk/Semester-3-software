@@ -6,9 +6,9 @@ For now I've designed a [basic full stack web application](https://vue-space-lb8
 
 (I am considering of keeping it like this for now as the online Web App will still function if you host the Web Socket locally)
 
-ORM Has been shown in a prototype project [here][https://github.com/Coen-Donk/Semester-3-software/tree/Development/Practice%20Projects/ORM/ORM%20Console]
+ORM Has been shown in a prototype project [here](https://github.com/Coen-Donk/Semester-3-software/tree/Development/Practice%20Projects/ORM/ORM%20Console)
 
-My explanation as for why can be seen [here][https://github.com/Coen-Donk/Semester-3-software/wiki/Portfolio-individual-project#orm]
+My explanation as for why can be seen [here](https://github.com/Coen-Donk/Semester-3-software/wiki/Portfolio-individual-project#orm)
 
 ### 2. You use software tooling and methodology that continuously monitors and improve the software quality during software development.
 
