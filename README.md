@@ -45,7 +45,7 @@ CD has been implemented as well, as any push to the github immediately pushes my
 For this learning outcome I covered what kind of differences I encountered in my semester 4 Creative Technology Team
 You can find the report on this in here: https://github.com/Coen-Donk/Semester-3-software/wiki/Cultural-differences-during-semester-4
 
-I've also made a report where I answer the [ethical questions](https://fhict.instructure.com/courses/13025/pages/ethics-analysis-do-you-think-about-ethical-consequences-from-the-software-you-make?module_item_id=916364) here](https://github.com/Coen-Donk/Semester-3-software/wiki/Ethical-Report-Group-Project)
+I've also made a report where I answer the [ethical questions](https://fhict.instructure.com/courses/13025/pages/ethics-analysis-do-you-think-about-ethical-consequences-from-the-software-you-make?module_item_id=916364) [here](https://github.com/Coen-Donk/Semester-3-software/wiki/Ethical-Report-Group-Project)
 
 ### 6. You analyze (non-functional) requirements, elaborate (architectural) designs and validate them using multiple types of test techniques.
 
