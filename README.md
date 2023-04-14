@@ -56,6 +56,7 @@ in both of these an importance of each user story can be seen with the story poi
 I have designed an architectural design (the C4-model level 1 and 2) for my application. I have stuck with Level 1 and 2 for now as they best display the overall structure of the app and level 3 might still change frequently as my knowledge of Vue.js and the Java Web-socket changes. 
 The documentation can be seen here: [https://github.com/Coen-Donk/Semester-3-software/tree/Development/Documentation}
 
+I've created a wireframe to better understand my asteroidpage and clarrify my future design for the stakeholders: https://github.com/Coen-Donk/Semester-3-software/blob/Development/Documentation/Images/Wireframe%20AsteroidPage.PNG
 
 ### 7. You analyze and describe simple business processes that are related to your project.
 
