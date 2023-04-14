@@ -47,8 +47,15 @@ You can find the report on this in here: https://github.com/Coen-Donk/Semester-3
 
 ### 6. You analyze (non-functional) requirements, elaborate (architectural) designs and validate them using multiple types of test techniques.
 
+I have analyzed the requirements in both my personal project and group project, and assessed the importance of each user story for the stakeholder (With the IP this is of course me, however with the GP this is mediaan)
+
+You can view an image of the group project board here: https://github.com/Coen-Donk/Semester-3-software/wiki/Portfolio-Group-Project#sprint-2
+The trello of my IP can be seen here: https://trello.com/b/4bBnZg2C/sem-3-vue-space-app
+in both of these an importance of each user story can be seen with the story points.
+
 I have designed an architectural design (the C4-model level 1 and 2) for my application. I have stuck with Level 1 and 2 for now as they best display the overall structure of the app and level 3 might still change frequently as my knowledge of Vue.js and the Java Web-socket changes. 
 The documentation can be seen here: [https://github.com/Coen-Donk/Semester-3-software/tree/Development/Documentation}
+
 
 ### 7. You analyze and describe simple business processes that are related to your project.
 
