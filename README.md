@@ -61,7 +61,8 @@ I've created a [wireframe](https://github.com/Coen-Donk/Semester-3-software/blob
 
 ### 7. You analyze and describe simple business processes that are related to your project.
 
-A busness process report can be viewed [here](https://github.com/Coen-Donk/Semester-3-software/wiki/Business-Process-Ping-pong)
+A busness process report can be viewed [here](https://github.com/Coen-Donk/Semester-3-software/wiki/Business-Process-Ping-pong).
+
 A business model can be viewed in the report or [here](https://user-images.githubusercontent.com/78910701/232809983-4fe4a8a6-c8da-474b-a486-9dabc5413569.png)
 
 ### 8.  You act in a professional manner during software development and learning.
