@@ -59,7 +59,9 @@ I have designed an architectural design (the C4-model level 1 and 2) for my appl
 The documentation can be seen [here](https://github.com/Coen-Donk/Semester-3-software/tree/Development/Documentation)
 
 I've created a [wireframe](https://github.com/Coen-Donk/Semester-3-software/blob/Development/Documentation/Images/Wireframe%20AsteroidPage.PNG
-) to better understand my asteroidpage and clarrify my future design for the stakeholders
+) to better understand my asteroidpage and clarify my future design for the stakeholders
+
+We've received feedback on our application during [sprint 2](https://github.com/Coen-Donk/Semester-3-software/wiki/Portfolio-Group-Project#ending-of-sprint-2). To show that we've received stakeholder feedback.
 
 ### 7. You analyze and describe simple business processes that are related to your project.
 
