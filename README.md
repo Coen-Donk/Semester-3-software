@@ -67,7 +67,7 @@ We've received feedback on our application during [sprint 2](https://github.com/
 
 A busness process report can be viewed [here](https://github.com/Coen-Donk/Semester-3-software/wiki/Business-Process-Ping-pong).
 
-A business model can be viewed in the report or [here](https://user-images.githubusercontent.com/78910701/232809983-4fe4a8a6-c8da-474b-a486-9dabc5413569.png)
+A business model can be viewed in the report or [here](https://user-images.githubusercontent.com/78910701/233654580-f52d05c0-effe-4e73-b765-05c8ed234064.png)
 
 ### 8.  You act in a professional manner during software development and learning.
 
