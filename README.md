@@ -66,8 +66,7 @@ We've received feedback on our application during [sprint 2](https://github.com/
 ### 7. You analyze and describe simple business processes that are related to your project.
 
 A busness process report can be viewed [here](https://github.com/Coen-Donk/Semester-3-software/wiki/Business-Process-Ping-pong).
-
-A business model can be viewed in the report or [here](https://user-images.githubusercontent.com/78910701/233654580-f52d05c0-effe-4e73-b765-05c8ed234064.png)
+This also contains the Business model with and without the application as well as an explanatin for it.
 
 ### 8.  You act in a professional manner during software development and learning.
 
