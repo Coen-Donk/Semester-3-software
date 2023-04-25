@@ -40,6 +40,8 @@ CI has been created for the website which you can view [here](https://github.com
 
 CD has been implemented as well, as any push to the github immediately pushes my code to vercel.app, and on sunday all code is automatically pushed to the vercel app as well.
 
+Implemented Branching in Github. Feature -> Dev -> Testing -> Release -> Production. 
+
 ### 5. You recognize and take into account cultural differences between project stakeholders and ethical aspects in software development.
 
 For this learning outcome I covered what kind of differences I encountered in my semester 4 Creative Technology Team
