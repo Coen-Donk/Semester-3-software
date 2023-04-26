@@ -42,6 +42,8 @@ CD has been implemented as well, as any push to the github immediately pushes my
 
 Implemented Branching in Github. Feature -> Dev -> Testing -> Release -> Production. 
 
+CI Has been implemented on the testing branch so that it executes the tests there. Only once those are passed can it go to the next branch.
+
 ### 5. You recognize and take into account cultural differences between project stakeholders and ethical aspects in software development.
 
 For this learning outcome I covered what kind of differences I encountered in my semester 4 Creative Technology Team
