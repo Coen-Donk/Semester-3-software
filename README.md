@@ -17,9 +17,9 @@ We've received feedback on our application during [sprint 2](https://github.com/
 For this learning outcome I've designed Unit testing inside my Web Socket application to ensure that the methods are all working correctly, as well as the connections. To ensure I've tested everything I gave myself the requirement to have a minimum of 90% Test coverage. 
 
 I've also implemented integration tests on my Websocket back-end to ensure that all methods work together as well in the same session.
+I've implented a UI test which is triggered through my Ci/Cd on the front-end git, the results can be viewed here [here](https://github.com/Coen-Donk/Vue-Space-App/actions/workflows/Cypress%20UI%20test.yml)
 
-Further more I've also implemented Code Analysis whenever I attempt to push to my git.
-
+Further more I've also implemented Code Analysis whenever I attempt to push to my git 
 Full detail can be viewed [here](https://github.com/Coen-Donk/Semester-3-software/wiki/Portfolio-individual-project#testing)
 
 ### 3. You choose and implement the most suitable agile software development method for your software project.
