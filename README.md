@@ -12,6 +12,8 @@ My explanation as for why can be seen [here](https://github.com/Coen-Donk/Semest
 
 We've received feedback on our application during [sprint 2](https://github.com/Coen-Donk/Semester-3-software/wiki/Portfolio-Group-Project#ending-of-sprint-2). To show that we've received stakeholder feedback.
 
+I've performed a usability tests together with two of my friends on my prototype. the results can be found [here](https://github.com/Coen-Donk/Semester-3-software/wiki/Usability-test-1-Results)
+
 ### 2. You use software tooling and methodology that continuously monitors and improve the software quality during software development.
 
 For this learning outcome I've designed Unit testing inside my Web Socket application to ensure that the methods are all working correctly, as well as the connections. To ensure I've tested everything I gave myself the requirement to have a minimum of 90% Test coverage. 
