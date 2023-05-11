@@ -69,6 +69,10 @@ The documentation can be seen [here](https://github.com/Coen-Donk/Semester-3-sof
 I've created a [wireframe](https://github.com/Coen-Donk/Semester-3-software/blob/Development/Documentation/Images/Wireframe%20AsteroidPage.PNG
 ) to better understand my asteroidpage and clarify my future design for the stakeholders
 
+I've also designed a prototype to perform usability tests with stakeholders and potential users. this can be found [here](![image](https://github.com/Coen-Donk/Semester-3-software/assets/78910701/fddc6fc8-c71e-4699-b96e-05d36dc08180)) and [here](![image](https://github.com/Coen-Donk/Semester-3-software/assets/78910701/050025a3-063b-4f26-8e74-99cd0761c016))
+
+A usability test has been performed with potential users, the report for which can be found [here](https://github.com/Coen-Donk/Semester-3-software/wiki/Usability-test-1-Results)
+
 We've received feedback on our application during [sprint 2](https://github.com/Coen-Donk/Semester-3-software/wiki/Portfolio-Group-Project#ending-of-sprint-2). To show that we've received stakeholder feedback.
 
 ### 7. You analyze and describe simple business processes that are related to your project.
