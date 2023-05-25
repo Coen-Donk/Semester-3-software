@@ -92,5 +92,8 @@ This semester I also have to write Research reports (In specific two, one about 
 Web Sockets Compared to API's (Lacks experimentation and Connection to IP)
 https://github.com/Coen-Donk/Semester-3-software/wiki/Research-Report-Web-sockets-compared-to-API's
 
+Security report 
+https://github.com/Coen-Donk/Semester-3-software/wiki/Security-Report-Web-Sockets
+
 Agile Report 
 https://github.com/Coen-Donk/Semester-3-software/wiki/Agile-Report
