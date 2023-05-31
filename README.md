@@ -97,5 +97,7 @@ https://github.com/Coen-Donk/Semester-3-software/wiki/Research-Report-Web-socket
 Security report 
 https://github.com/Coen-Donk/Semester-3-software/wiki/Security-Report-Web-Sockets
 
+Research Plan for the Security report: https://github.com/Coen-Donk/Semester-3-software/wiki/Security-Report-Web-Sockets#research-plan-security-report
+
 Agile Report 
 https://github.com/Coen-Donk/Semester-3-software/wiki/Agile-Report
